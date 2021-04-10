@@ -42,7 +42,7 @@ export const Hi = () => {
     const pictureProps = useSpring({
         opacity: 1, 
         from: {opacity: 0}, 
-        config: { duration: 500 },
+        config: { duration: 2000 },
         })
 
     const nameProps = useSpring({
