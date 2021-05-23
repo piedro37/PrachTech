@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import styled from 'styled-components'
-import { CenterSection, FlexCol } from 'styles/shared'
+import { CenterSection, fadeIn, FlexCol } from 'styles/shared'
 import { darkGrey2 } from 'styles/themes'
 
+const Wrap = styled(CenterSection)`
+    animation: ${fadeIn} 1.5s linear;
+`
 
 const ProjectWrap = styled.div`
     margin: 2rem auto;
@@ -81,6 +84,12 @@ const Description = styled.p`
     border-radius: 5px;
     padding: 0.5rem;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    @media (max-width: 800px) {
+        margin-top: 0.5rem;
+    }
+    @media (max-width: 500px) {
+        margin-top: 0rem;
+    }
 `
 
 
@@ -101,7 +110,7 @@ const RecentProjects = (props) => {
 
 
     return (
-        <CenterSection>
+        <Wrap>
             <h1>Recent Projects</h1>
 
             <ProjectWrap>
@@ -141,7 +150,7 @@ const RecentProjects = (props) => {
                 </ProjectInfo>
             </ProjectWrap>
 
-        </CenterSection>
+        </Wrap>
     )
 }
 

@@ -11,15 +11,18 @@ import StyledLogo from './items/StyledLogo'
 import ReduxLogo from './items/ReduxLogo'
 import MaterialUILogo from './items/MaterialUILogo'
 
+
+const Wrap = styled(CenterSection)`
+    animation: ${fadeIn} 1.5s linear;
+`
+
 const LogoWrap = styled(FlexRowWrap)`
     max-width: 560px; //560
     margin: 1.2rem auto;
     justify-content: center;
 `
 
-const Wrap = styled(CenterSection)`
-    animation: ${fadeIn} 1.5s linear;
-`
+
 
 const Skills = (props) => {
     return (
