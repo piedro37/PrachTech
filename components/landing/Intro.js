@@ -1,11 +1,14 @@
 import styled from 'styled-components'
-import { CenterSection, FlexRowWrap, JustifyText } from 'styles/shared'
+import { CenterSection, fadeIn } from 'styles/shared'
 import ProfilePicture from 'components/landing/ProfilePicture'
 
+const Wrap = styled(CenterSection)`
+    animation: ${fadeIn} 1s linear;
+`
 
 const Intro = (props) => {
     return (
-        <CenterSection>
+        <Wrap>
 			<ProfilePicture />
 
 			<h1>Pieter Van Eynde</h1>
@@ -14,7 +17,7 @@ const Intro = (props) => {
 
 
 
-        </CenterSection>
+        </Wrap>
     )
 }
 

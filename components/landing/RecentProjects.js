@@ -10,7 +10,7 @@ const ProjectWrap = styled.div`
     height: 20rem;
 
     @media (max-width: 800px) {
-        width: 28rem;
+        width: 100%;
     }
 `
 
@@ -34,7 +34,7 @@ const ProjectLogo = styled.div`
     }
 
     @media (max-width: 800px) {
-        width: 28rem;
+        width: 100%;
         /* padding: 0 1rem; */
     }
 
@@ -52,7 +52,7 @@ const ProjectInfo = styled(FlexCol)`
     border-radius: 1rem;
 
     @media (max-width: 800px) {
-        width: 28rem;
+        width: 100%;
         padding: 0 1rem;
     }
 `
@@ -84,12 +84,13 @@ const Description = styled.p`
 `
 
 
-const Outro = styled.p`
+const Outro = styled.div`
     margin-top: auto;
     margin-bottom: 0.2rem;
     font-size: 0.8rem;
     line-height: 1rem;
     text-align: right;
+    color: ${props => props.theme.p};
 
     @media (max-width: 800px) {
         color: ${darkGrey2} !important;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { CenterSection, FlexRowWrap, JustifyText } from 'styles/shared'
+import { CenterSection, fadeIn, FlexRowWrap, JustifyText } from 'styles/shared'
 import JSLogo from './items/JSLogo'
 import ReactLogo from './items/ReactLogo'
 import TSLogo from './items/TSLogo'
@@ -17,9 +17,13 @@ const LogoWrap = styled(FlexRowWrap)`
     justify-content: center;
 `
 
+const Wrap = styled(CenterSection)`
+    animation: ${fadeIn} 1.5s linear;
+`
+
 const Skills = (props) => {
     return (
-        <CenterSection>
+        <Wrap>
             <h1>Skills</h1>
 
             <JustifyText>
@@ -41,7 +45,7 @@ const Skills = (props) => {
                 <MaterialUILogo /> 
             </LogoWrap> 
 
-        </CenterSection>
+        </Wrap>
     )
 }
 
