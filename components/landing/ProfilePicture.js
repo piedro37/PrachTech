@@ -1,10 +1,7 @@
 import Image from 'next/image'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
+import { fadeIn } from 'styles/shared'
 
-const fadeIn = keyframes`
-  from {opacity: 0}
-  to {opacity: 1}
-`;
 
 const Styled = styled.div`
     margin: 2rem 0 0rem 0;

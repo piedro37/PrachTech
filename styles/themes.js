@@ -4,8 +4,8 @@ const lightGrey = '#F0EAF7'
 const orange = '#dd571c' 
 const almostWhite = '#eaeaea'
 const darkGrey = '#171A23'
-const darkGrey2 = '#212532'
-const mediumGrey = '#C9C9CB'
+export const darkGrey2 = '#212532'
+export const mediumGrey = '#C9C9CB'
 
 export const lightTheme = {
     primary: 'black',
@@ -19,13 +19,14 @@ export const lightTheme = {
     
     hover: blue,
     border: mediumGrey,
+    accentBorder: blue,
     
     logo: '/images/logoBlack.png',
     logoHover: '/images/logoBlue.png',
     navbarBorder: lightGrey,
 
     buttonHoverBackground: lightGrey,
-
+    // semitransparantBackGround: 
 }
 
 export const darkTheme = {
@@ -40,6 +41,7 @@ export const darkTheme = {
 
     hover: orange,
     border: mediumGrey,
+    accentBorder: orange,
     
     logo: '/images/logoWhite.png',
     logoHover: '/images/logoOrange.png',

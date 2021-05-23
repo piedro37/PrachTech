@@ -26,16 +26,18 @@ const Container = styled.div`
     h2 {
         color: ${props => props.theme.h2};
         font-size: 1.5rem;
-        margin: 0.5rem 0;
+        /* margin: 0.5rem 0; */
     }
 
     h3 {
         color: ${props => props.theme.h3};
+        margin: 1rem 0;
     }
 
     p {
         color: ${props => props.theme.p};
         line-height: 1.5;
+        /* margin: 0.5rem 0; */
     }
     
     a:hover {
