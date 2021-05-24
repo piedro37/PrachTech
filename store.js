@@ -8,6 +8,7 @@ const reducers = combineReducers({
   general: generalReducer, 
 })
 
+//opgelet, rename key na wijzigingen aan reducers
 const persistConfig = {
   key: 'prachtech',
   storage,
@@ -21,3 +22,11 @@ export default configureStore({
   devTools: true,
   middleware: [thunk],
 })
+
+
+// export default configureStore({
+//   reducer: {
+//     general: generalReducer,
+//   },
+//   devTools: true,
+// })

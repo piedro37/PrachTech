@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Skills from 'components/landing/skills/Skills'
 import Intro from 'components/landing/Intro'
 import RecentProjects from 'components/landing/RecentProjects'
+import ContactForm from 'components/landing/ContactForm'
 
 
 
@@ -18,7 +19,7 @@ export default function Home() {
 
 			<RecentProjects />
 			
-			
+			<ContactForm />
 
 
 			
