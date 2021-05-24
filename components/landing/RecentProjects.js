@@ -143,7 +143,7 @@ const RecentProjects = (props) => {
                 <ProjectInfo uneven={true}>
                     <Title>Grenspark Gidsen</Title>
                     <Short>a custom made matching tool</Short>
-                    <Description>In the public frontend, visitors can make a reservation of one of the guided tours. Admins can then select a suitable guide, communicate the match and manage the tours, visits, guides,...</Description>
+                    <Description>In a public frontend, visitors can make a reservation of a guided tour in nature. Admins can then manage the visit, match with a guide, communicate,...</Description>
                     <Outro>
                         <div>Nextjs, Formik, Firebase, Firestore, Material-UI,...</div>
                     </Outro>
