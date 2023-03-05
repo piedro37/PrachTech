@@ -1,1 +1,0 @@
-#prachtech nextjs version
