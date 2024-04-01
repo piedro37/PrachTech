@@ -40,15 +40,13 @@ const StyledLogo = styled.div`
 
 const MyLogo = () => {
     return (
-        <StyledLogo title='PrachTech home.'>
-            <Link href='/' >
-                <a>
-                    <LogoImg />
-                    <Name>PrachTech</Name>
-                </a>
-            </Link>
-        </StyledLogo>
-    )
+      <StyledLogo title='PrachTech home.'>
+        <Link href='/'>
+          <LogoImg />
+          <Name>PrachTech</Name>
+        </Link>
+      </StyledLogo>
+    );
 }
 
 export default MyLogo

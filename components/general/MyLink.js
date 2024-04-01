@@ -9,14 +9,10 @@ const Styled = styled.div`
 
 const MyLink = ({children, href, text, title }) => {
     return (
-        <Styled title={title}> 
-            <Link href={href}>
-                <a>
-                    {text || children}
-                </a>
-            </Link>
-        </Styled>
-    )
+      <Styled title={title}>
+        <Link href={href}>{text || children}</Link>
+      </Styled>
+    );
 }
 
 export default MyLink

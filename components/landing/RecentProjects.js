@@ -110,48 +110,61 @@ const RecentProjects = (props) => {
 
 
     return (
-        <Wrap>
-            <h1>Recent Projects</h1>
+      <Wrap>
+        <h1>Recent Projects</h1>
 
-            <ProjectWrap>
-                <ProjectLogo onClick={()=>window.open('http://www.aptec.be', '_blank')}>
-                    <Image
-                        src='/images/projects/AptecLogo.png'
-                        width={200}
-                        height={80}
-                        />
-                </ProjectLogo>
-                <ProjectInfo>
-                    <Title>myAPTEC</Title>
-                    <Short>a custom made online ERP</Short>
-                    <Description>Manage your business online: accounts, contacts, products, quotes, invoices, stock, production, quality control, reports, an extranet for the customers,...</Description>
-                    <Outro>
-                        <div>Redux, Blueprint, Azure, Docker, Github Actions,...</div>
-                        <div>Private project but demo coming soon</div>
-                    </Outro>
-                </ProjectInfo>
-            </ProjectWrap>
+        <ProjectWrap>
+          <ProjectLogo
+            onClick={() => window.open('http://www.aptec.be', '_blank')}
+          >
+            <Image
+              src='/images/projects/AptecLogo.png'
+              width={200}
+              height={80}
+            />
+          </ProjectLogo>
+          <ProjectInfo>
+            <Title>myAPTEC</Title>
+            <Short>a custom made online ERP</Short>
+            <Description>
+              Manage your business online: accounts, contacts, products, quotes,
+              invoices, stock, production, quality control, reports, an extranet
+              for the customers,...
+            </Description>
+            <Outro>
+              <div>Redux, Blueprint, Azure, Docker, Github Actions,...</div>
+            </Outro>
+          </ProjectInfo>
+        </ProjectWrap>
 
-            <ProjectWrap>
-                <ProjectLogo onClick={()=>window.open('http://grensparkgidsen.vercel.app', '_blank')} uneven={true}>
-                    <Image
-                        src='/images/projects/GrensparkLogo.png'
-                        width={200}
-                        height={96}
-                        />
-                </ProjectLogo>
-                <ProjectInfo uneven={true}>
-                    <Title>Grenspark Gidsen</Title>
-                    <Short>a custom made matching tool</Short>
-                    <Description>In a public frontend, visitors can make a reservation of a guided tour in nature. Admins can then manage the visit, match with a guide, communicate,...</Description>
-                    <Outro>
-                        <div>Nextjs, Formik, Firebase, Firestore, Material-UI,...</div>
-                    </Outro>
-                </ProjectInfo>
-            </ProjectWrap>
-
-        </Wrap>
-    )
+        <ProjectWrap>
+          <ProjectLogo
+            onClick={() =>
+              window.open('http://grensparkgidsen.vercel.app', '_blank')
+            }
+            uneven={true}
+          >
+            <Image
+              src='/images/projects/GrensparkLogo.png'
+              width={200}
+              height={96}
+            />
+          </ProjectLogo>
+          <ProjectInfo uneven={true}>
+            <Title>Grenspark Gidsen</Title>
+            <Short>a custom made matching tool</Short>
+            <Description>
+              In a public frontend, visitors can make a reservation of a guided
+              tour in nature. Admins can then manage the visit, match with a
+              guide, communicate,...
+            </Description>
+            <Outro>
+              <div>Nextjs, Formik, Firebase, Firestore, Material-UI,...</div>
+            </Outro>
+          </ProjectInfo>
+        </ProjectWrap>
+      </Wrap>
+    );
 }
 
 export default RecentProjects

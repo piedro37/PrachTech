@@ -25,12 +25,12 @@ const Styled = styled.div`
 
 const Footer = () => {
     return (
-        <Styled>
-            <div>Pieter Van Eynde - </div>
-            <Link href='/' ><a>PrachTech BV</a></Link>
-            {/* <div> - Nieuwstraat 17 - 9100 Sint-Niklaas - BE 0727 479 313</div> */}
-        </Styled>
-    )
+      <Styled>
+        <div>Pieter Van Eynde - </div>
+        <Link href='/'>PrachTech BV</Link>
+        {/* <div> - Nieuwstraat 17 - 9100 Sint-Niklaas - BE 0727 479 313</div> */}
+      </Styled>
+    );
 }
 
 export default Footer

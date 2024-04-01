@@ -1,30 +1,14 @@
-import PageLayout from '../components/general/PageLayout'
-import styled from 'styled-components'
-
-import Skills from 'components/landing/skills/Skills'
-import Intro from 'components/landing/Intro'
-import RecentProjects from 'components/landing/RecentProjects'
-import ContactForm from 'components/landing/ContactForm'
-
-
-
+import Intro from 'components/landing/Intro';
+import RecentProjects from 'components/landing/RecentProjects';
+import Skills from 'components/landing/skills/Skills';
+import PageLayout from '../components/general/PageLayout';
 
 export default function Home() {
   return (
-	<PageLayout title='PrachTech'>
-
-			<Intro />
-			
-			<Skills />
-
-			<RecentProjects />
-			
-			<ContactForm />
-
-
-			
-
-
+    <PageLayout title='PrachTech'>
+      <Intro />
+      <Skills />
+      <RecentProjects />
     </PageLayout>
-  )
+  );
 }
