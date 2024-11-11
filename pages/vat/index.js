@@ -5,8 +5,9 @@ export default function Vat() {
     <PageLayout title='PrachTech BV'>
       <div>
         <h2>PrachTech BV</h2>
-        <p>BE 0727 479 313</p>
-        <p>Lepelhoekstraat 83A, 9100 Sint-Niklaas</p>
+        <h2>BE 0727 479 313</h2>
+        <p>Lepelhoekstraat 83A</p>
+        <p>9100 Sint-Niklaas</p>
       </div>
     </PageLayout>
   );
