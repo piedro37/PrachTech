@@ -9,6 +9,7 @@ export default function Vat() {
         <p>Lepelhoekstraat 83A</p>
         <p>9100 Sint-Niklaas</p>
         <p>pieter@prach.tech</p>
+        <p>Pieter Van Eynde</p>
       </div>
     </PageLayout>
   );
